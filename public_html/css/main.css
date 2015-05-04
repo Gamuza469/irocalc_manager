@@ -1,0 +1,51 @@
+@font-face {
+    font-family: ubuntuRegularMono;
+    src: url(./fonts/UbuntuMono-R.ttf);
+}
+
+body {
+    font-family: ubuntuRegularMono;
+}
+
+.itemNameId {
+    width: 50px;
+}
+
+.itemNameName {
+    width: 250px;
+}
+
+.itemNameDescription {
+    width: 400px;
+}
+
+.itemNameObject {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.itemNameObject input[type='button'] {
+    margin-left: 20px
+}
+
+.inputSpan, .outputSpan {
+    display: block;
+}
+
+.inputSpan textArea, .outputSpan textArea {
+    display: block;
+    height: 100px;
+    width: 800px;
+}
+
+.inputSpan label, .outputSpan label {
+    vertical-align: top;
+}
+
+.itemNameObject label, .itemObjectObject label {
+    margin-left: 20px;
+}
+
+#itemTypeSelectorSpan {
+    display: none;
+}

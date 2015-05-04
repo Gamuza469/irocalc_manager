@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>iRO Stat Calculator - Item Manager</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="./css/main.css" rel="stylesheet"/>
+	
+	<script src="./js/libs/jquery/jquery.js" type="text/javascript"></script>
+	
+	<script src="./js/dataClasses.js" type="text/javascript"></script>
+	<script src="./js/dataParserServices.js" type="text/javascript"></script>
+	<script src="./js/dataParserController.js" type="text/javascript"></script>
+	<script src="./js/dataParserView.js" type="text/javascript"></script>
+	
+	<script src="./js/mainApplication.js" type="text/javascript"></script>
+    </head>
+    <body>
+	<h1>iRO Stat Calculator - Item Manager</h1>
+	<ul>
+	    <li>Place the arrays inside the textareas and click &quot;Parse&quot;.</li>
+	    <li>Edit the items &quot;a gusto & piacere&quot;.</li>
+	    <li>Click on &quot;Generate&quot; to create a new item array.</li>
+	    <li>Copypasta the arrays into the corresponding files and run!</li>
+	</ul>
+	<form id="arraysInput">
+	    <span class="inputSpan">
+		<label for="itemNamesIn">Item Names:</label><textarea id="itemNamesIn"></textarea>
+	    </span>
+	    <span class="inputSpan">
+		<label for="itemObjectIn">Item Data:</label><textarea id="itemObjectIn"></textarea>
+	    </span>
+	    <input id="parseData" type="button" value="Parse" />
+	</form>
+	<hr />
+	<form id="dataObjects">
+	    <span id="itemNameObjects"></span>
+	</form>
+	<hr />
+	<form id="arraysOutput">
+	    <span class="outputSpan">
+		<label for="itemNamesOut">Item Names:</label><textarea id="itemNamesOut"></textarea>
+	    </span>
+	    <span class="outputSpan">
+		<label for="itemObjectOut">Item Data:</label><textarea id="itemObjectOut"></textarea>
+	    </span>
+	</form>
+	<span id="itemTypeSelectorSpan">
+	    <select id="itemTypeSelector">
+		<option value="">Select ...</option>
+	    </select>
+	</span>
+	<p>
+	    Alpha v0.001
+	</p>
+    </body>
+</html>
